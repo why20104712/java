@@ -22,9 +22,13 @@ public class PersonInfo implements Comparable<PersonInfo> {
     }
 
 
-    public int compareTo(PersonInfo p1, PersonInfo p2){
+    public static int compare(PersonInfo p1, PersonInfo p2){
         return p2.getName().compareTo(p1.getName());
     }
 
+
+    public int compareTo(PersonInfo p1, PersonInfo p2) {
+        return p2.getName().compareTo(p1.getName());
+    }
 
 }
