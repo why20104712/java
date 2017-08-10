@@ -1,4 +1,4 @@
-package com.why;
+package com.why.service;
 
 /**
  * 函数式接口
