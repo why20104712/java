@@ -25,6 +25,10 @@ public class Ioc {
 
     public static void main(String[] args) {
 
+        /**
+         * 使用代码手动往IOC容器注入bean
+         */
+
         DefaultListableBeanFactory beanDefinitionRegistry = new DefaultListableBeanFactory();
         /**
          *将bean定义注册到容器中
