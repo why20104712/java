@@ -1,4 +1,4 @@
-package com.why;
+package com.why.service;
 
 import java.util.Arrays;
 import java.util.Comparator;
