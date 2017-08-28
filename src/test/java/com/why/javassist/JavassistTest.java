@@ -89,6 +89,44 @@ public class JavassistTest {
 
     }
 
+    /**
+     * 测试产生新的属性
+     */
+    @Test
+    public void test04() throws Exception{
+        ClassPool pool = ClassPool.getDefault();
+        CtClass cc = pool.get("com.why.javassist.Person");//获取已有的类
+
+        //CtField f1 = CtField.make("private int salary;", cc);
+        //另一种方式
+        CtField f1 = new CtField(CtClass.intType, "salary",cc);
+        f1.setModifiers(Modifier.PRIVATE);
+        cc.addField(f1);
+
+        //cc.getDeclaredField("salary");//获取指定的属性
+        //另一种方式
+        cc.addMethod(CtNewMethod.getter("getSalary", f1));
+        cc.addMethod(CtNewMethod.getter("setSalary", f1));
+
+        //通过反射调用，省略。。。
+    }
+
+
+    /**
+     * 测试构造器
+     */
+    @Test
+    public void test05() throws Exception{
+        ClassPool pool = ClassPool.getDefault();
+        CtClass cc = pool.get("com.why.javassist.Person");//获取已有的类
+
+        CtConstructor[] cs = cc.getConstructors();
+        for (CtConstructor c : cs) {
+            System.out.println(c.getLongName());
+        }
+    }
+
+
 
     public static void main(String[] args) throws Exception {
 
