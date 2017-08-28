@@ -16,7 +16,7 @@ import javax.annotation.Resource;
  * Created by why on 13/07/2017.
  */
 @SpringBootTest
-public class FunctionInterfaceDemoTest {
+public class FunctionInterfaceDemoJavassistTest {
 
 
     private static ApplicationContext applicationContext;
