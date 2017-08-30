@@ -27,7 +27,7 @@ public class DataSourceChoose {
                 JdbcContextHolder.setJdbcType(data.value().getName());
             }
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
     }
