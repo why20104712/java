@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.Resource;
 
-@SpringBootApplication
+//@SpringBootApplication
 public class JavaApplication {
 
 	public static void main(String[] args) {
