@@ -7,6 +7,7 @@ import com.why.config.DataSourceType;
 public interface UserService {
 
     @DataSource(DataSourceType.SLAVE)
+//    @DataSource(DataSourceType.MASTER)
     User getEntity(Integer id);
 
 }

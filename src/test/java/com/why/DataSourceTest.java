@@ -24,6 +24,6 @@ public class DataSourceTest {
     @Test
     public void test() {
         User user = userService.getEntity(1);
-        System.out.println(user);
+        System.out.println(user.getName());
     }
 }
