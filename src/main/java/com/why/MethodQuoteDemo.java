@@ -1,4 +1,6 @@
-package com.why.service;
+package com.why;
+
+import com.why.service.Car;
 
 import java.util.ArrayList;
 import java.util.Arrays;

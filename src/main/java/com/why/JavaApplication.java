@@ -15,4 +15,19 @@ public class JavaApplication {
 
 	}
 
+	public static final String c ="111";
+
+
+	public static void a() {
+
+		System.out.println(c);
+	}
+
+
+	public void b() {
+		a();
+		System.out.println(c);
+	}
+
+
 }

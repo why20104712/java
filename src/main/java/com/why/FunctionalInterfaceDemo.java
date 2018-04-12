@@ -1,4 +1,4 @@
-package com.why.service;
+package com.why;
 
 /**
  * 函数式接口
@@ -19,6 +19,9 @@ public interface FunctionalInterfaceDemo {
     static void test1() {
         System.out.println("test1");
     }
+    static void test12() {
+        System.out.println("test1");
+    }
 
     default void test2() {
         System.out.println("test2");
@@ -29,5 +32,6 @@ public interface FunctionalInterfaceDemo {
      * @param obj 对象
      * @return boolean
      */
+    @Override
     boolean equals(Object obj);
 }

@@ -1,4 +1,4 @@
-package com.why.service;
+package com.why;
 
 /**
  * 个人信息

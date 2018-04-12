@@ -1,4 +1,4 @@
-package com.why.service;
+package com.why;
 
 import java.util.ArrayList;
 import java.util.List;

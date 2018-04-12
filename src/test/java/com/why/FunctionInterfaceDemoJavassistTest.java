@@ -2,14 +2,10 @@ package com.why;
 
 import com.why.bean.MyService;
 import com.why.config.AppConfig;
-import com.why.service.FunctionalInterfaceDemo;
-import org.junit.Before;
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import javax.annotation.Resource;
 
 /**
  * 测试函数式接口
